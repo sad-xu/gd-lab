@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AnimationResource" load_steps=3 format=3 uid="uid://c6rgit7rm5ih1"]
+
+[ext_resource type="Animation" uid="uid://mfi72ewpijtd" path="res://test/character_2/animation/magic.res" id="1_r7yds"]
+[ext_resource type="Script" path="res://test/scene_1/animation_resource.gd" id="1_xafil"]
+
+[resource]
+script = ExtResource("1_xafil")
+name = "magic"
+anim_name = "魔法"
+anim_res = ExtResource("1_r7yds")

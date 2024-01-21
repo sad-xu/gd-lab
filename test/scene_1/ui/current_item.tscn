@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8qmh70sgcvn8"]
+
+[ext_resource type="Script" path="res://test/scene_1/ui/current_item.gd" id="1_bokaf"]
+
+[node name="CurrentItem" type="HBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_bokaf")
+
+[node name="CheckBox" type="CheckBox" parent="."]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 2
+placeholder_text = "动作名"
+max_length = 5
+expand_to_text_length = true
+
+[node name="BodyButton" type="Button" parent="."]
+layout_mode = 2
+text = "躯干"
+
+[node name="LeftArmButton" type="Button" parent="."]
+layout_mode = 2
+text = "左臂"
+
+[node name="RightArmButton" type="Button" parent="."]
+layout_mode = 2
+text = "右臂"
+
+[node name="LeftLegButton" type="Button" parent="."]
+layout_mode = 2
+text = "左腿"
+
+[node name="RightLegButton" type="Button" parent="."]
+layout_mode = 2
+text = "右腿"
+
+[node name="PlayButton" type="Button" parent="."]
+layout_mode = 2
+text = "=>"
+
+[connection signal="toggled" from="CheckBox" to="." method="_on_check_box_toggled"]
+[connection signal="text_changed" from="LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]

@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy6iqaqo5br2i"]
+
+[ext_resource type="Script" path="res://test/scene_1/ui/action_item.gd" id="1_y0bjt"]
+
+[node name="ActionItem" type="HBoxContainer"]
+script = ExtResource("1_y0bjt")
+
+[node name="NameLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "Name"
+autowrap_mode = 1
+
+[node name="BodyButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+text = "躯干"
+
+[node name="LeftArmButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+text = "左臂"
+
+[node name="RightArmButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+text = "右臂"
+
+[node name="LeftLegButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+text = "左腿"
+
+[node name="RightLegButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+text = "右腿"
+
+[connection signal="pressed" from="BodyButton" to="." method="_on_body_button_pressed"]
+[connection signal="pressed" from="LeftArmButton" to="." method="_on_left_arm_button_pressed"]
+[connection signal="pressed" from="RightArmButton" to="." method="_on_right_arm_button_pressed"]
+[connection signal="pressed" from="LeftLegButton" to="." method="_on_left_leg_button_pressed"]
+[connection signal="pressed" from="RightLegButton" to="." method="_on_right_leg_button_pressed"]

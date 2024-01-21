@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AnimationResource" load_steps=3 format=3 uid="uid://cavvoiup7837a"]
+
+[ext_resource type="Animation" uid="uid://y4e24y3i7u4m" path="res://test/character_2/animation/kick.res" id="1_1q8wa"]
+[ext_resource type="Script" path="res://test/scene_1/animation_resource.gd" id="1_sp310"]
+
+[resource]
+script = ExtResource("1_sp310")
+name = "kick"
+anim_name = "轻踢"
+anim_res = ExtResource("1_1q8wa")
