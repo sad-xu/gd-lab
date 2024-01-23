@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://fxp1m2ujq5qb"]
+
+[ext_resource type="Script" path="res://test/skill/sprint.gd" id="1_do3st"]
+
+[node name="Sprint" type="Node"]
+script = ExtResource("1_do3st")
